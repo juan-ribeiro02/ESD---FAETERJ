@@ -1,8 +1,6 @@
+#include"funcoes.h"
 #include<stdlib.h>
 #include<stdio.h>
-
-int* preencherMatriz(int linha, int coluna); //preencher vetor com alocacao dinamica unica
-void exibirMatriz(int *m, int linha, int coluna); //exibir vetor com alocacao dinamica unica
 
 int* preencherMatriz(int linha, int coluna)
 {
@@ -34,4 +32,21 @@ void exibirMatriz(int *m, int linha, int coluna)
         }
         printf("\n");
     }
+}
+
+int divisaoInteira(int dividendo, int divisor, int *quociente, int *resto)
+{
+    if (dividendo == 0 && divisor == 0)
+    {
+        return -1;
+    } 
+    else if (divisor == 0)
+    {
+        return 0;
+    }
+
+    *quociente = dividendo/divisor;
+    *resto = dividendo % divisor;
+
+    return 1;
 }
