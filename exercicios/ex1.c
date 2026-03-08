@@ -39,8 +39,7 @@ void preenche(tOp *pEnt)
     {
         scanf("%d", &pEnt->nota[i]);
     }
-}
-
+}   
 void exibir(tOp pEnt[], int quantidade)
 {
     int i, j;
